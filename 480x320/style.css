@@ -1,0 +1,183 @@
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #532f1c;
+}
+
+.container {
+  position: absolute;
+  width: 480px;
+  height: 320px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  /*top: 300px;*/
+  /*left: 600px;*/
+  background-color: #3c1400;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  /* background-image: radial-gradient(circle at top,  #975511 0%, #3c1400 60%);
+  background-position: top -100px left;
+  background-repeat: no-repeat; */
+  border: 1px solid #3c1400;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+
+#env {
+  width: 244px;
+  height: 150px;
+  left: 170px;
+  top: 142px;
+  box-shadow: 2px 2px 8px rgba(39, 16, 4, 0.5);
+  transform: skewX(3deg) rotate(-18deg);
+}
+
+#left {
+  width: 124px;
+  left: 0px;
+  top: 201px;
+}
+
+#right {
+  width: 155px;
+  left: 329px;
+  top: 139px;
+}
+
+#candies {
+  width: 260px;
+  left: -5px;
+  top: -8px;
+}
+
+
+
+#garland {
+  /* width: 480px;
+  height: 320px;
+  left: 0px; */
+}
+
+#garland__base {
+  width: 159px;
+  left: 231px;
+  top: 0px;
+}
+
+
+.light {
+  position: absolute;
+  width: 130px;
+  left: 0;
+  top: 0;
+}
+
+#lights01-1 {
+  left: 209px;
+  top: -5px;
+}
+#lights01-2 {
+  left: 292px;
+  top: 56px;
+}
+#lights01-3 {
+  left: 281px;
+  top: 241px;
+}
+
+#lights02-1 {
+  left: 184px;
+  top: -52px;
+}
+#lights02-2 {
+  left: 246px;
+  top: 32px;
+}
+#lights02-3 {
+  left: 319px;
+  top: 214px;
+}
+
+
+#lights03-1 {
+  left: 141px;
+  top: -37px;
+}
+#lights03-2 {
+  /* width: 95px;
+  left: 107px;
+  top: 23px; */
+  width: 95px;
+  left: 220px;
+  top: -44px;
+}
+
+@keyframes light1-anim {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.4);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+}
+@keyframes light2-anim {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(0.4);
+  }
+}
+
+.light1 {
+  opacity: 0.5;
+  transform: scale(0.4);
+  animation: light1-anim 1s infinite linear alternate;
+  animation-iteration-count: 28;
+}
+
+.light2 {
+  opacity: 0.8;
+  transform: scale(0.8);
+  animation: light2-anim 1s infinite linear alternate;
+  animation-iteration-count: 28;
+}
+
+
+
+#schirm {
+  width: 480px;
+  height: 320px;
+  top: 0;
+  left: 0;
+  background-color: #3c1400;
+  opacity: 0;
+}
