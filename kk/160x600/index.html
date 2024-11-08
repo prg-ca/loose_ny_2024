@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta name="ad.size" content="width=160,height=600">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+  <script type="text/javascript">
+    var clickTag = "#"; 
+    document.addEventListener("DOMContentLoaded", function(event) { 
+      TweenLite.ticker.useRAF(false);
+      TweenLite.lagSmoothing(0);
+      var tl = new TimelineMax({ repeat: 2, repeatDelay: 5});
+      // var tl = new TimelineMax();
+
+      tl.from("#schirm", 1, {opacity: 1})
+        .from("#env", 1, {scale: 1.6, x: 220, y: -140, rotation: 80})
+        .from("#candies", 1, {x: -300, y: 100}, '-=0.6')
+        .from("#right", 1, {x: 150, y: -100}, '-=0.9')
+        .from("#left", 1, {x: -150, y: 100}, '-=0.9')
+        .from("#garland", 1, {opacity: 0}, '-=0.7')
+
+
+      ;
+   });
+  </script>
+</head>
+<body>
+  <a href="javascript:window.open(window.clickTag)" target="_blank">
+    <div class="container">
+
+      <div id="env" class="el">
+        <img src="env.jpg">
+      </div>
+      <div id="left" class="el">
+        <img src="left.png">
+      </div>
+      <div id="right" class="el">
+        <img src="right.png">
+      </div>
+      <div id="candies" class="el">
+        <img src="candies.png">
+      </div>
+
+      <div id="garland" class="el">
+        <div id="garland__base" class="el">
+          <img src="garland_base.png"> 
+        </div>
+        <div id="lights01">
+          <img id="lights01-1" class="light  light1" src="garland_light.png">
+          <img id="lights01-2" class="light  light2" src="garland_light.png">
+          <img id="lights01-3" class="light  light1" src="garland_light.png">
+        </div>
+      </div>
+      <div id="lights03">
+        <img id="lights03-1" class="light  light2" src="garland_light.png">
+        <img id="lights03-2" class="light  light1" src="garland_light.png">
+      </div>
+      <div id="schirm" class="el"></div>
+
+    </div>
+  </a>
+</body>
